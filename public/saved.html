@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Saved Scrapes</title>
+  <!-- **stylesheets** -->
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
+  <!-- bootstrap -->
+  <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- mdbootstrap -->
+  <link href="./assets/css/mdb.min.css" rel="stylesheet" />
+  <!-- custom css -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+
+  <!-- navbar -->
+  <nav class="navbar navbar-dark danger-color">
+    <a class="navbar-brand timesScraper3000" href="./index.html">TIMES SCRAPER 3000</a>
+    <form class="form-inline">
+      <a href="./index.html"><button class="btn btn-light" type="button">Home</button></a>
+      <a href="./saved.html"><button class="btn btn-light" type="button">Saved Articles</button></a>
+    </form>
+  </nav>
+
+  <!-- jumbotron -->
+  <div class="jumbotron card card-image" style="background-image: url(./assets/images/newspaperBkgrnd.jpg)">
+    <div class="text-black text-center py-5 px-4">
+      <div>
+        <h2 class="card-title h1-responsive pt-3 mb-5 font-bold title"><strong>|| SAVED ARTICLES ||</strong></h2>
+        <p class="mx-5 mb-5 titleInfo">~ articles you have saved to read for later ~
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- action modal -->
+  <div class="modal fade" id="notesModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <!--Header-->
+        <div class="modal-header">
+          <h4 class="modal-title" id="myModalLabel"><strong>Article Notes</strong></h4>
+        </div>
+        <!--Body-->
+        <div class="modal-body">
+          <ul id="noteList" class="list-group">
+          </ul>
+        </div>
+        <div class="form-container">
+          <form>
+            <div class="form-group">
+              <label for="noteTextArea">New Note</label>
+              <textarea class="form-control" id="noteTextArea" rows="3"></textarea>
+            </div>
+          </form>
+        </div>
+        <!--Footer-->
+        <div class="modal-footer justify-content-between">
+          <button class="btn btn-danger addNoteBtn">Add Note</button>
+          <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- saved articles container -->
+  <div id="articleContainer" class="container"></div>
+
+
+  <!-- **script tags** -->
+  <!-- axios -->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <!-- jquery -->
+  <script src="./assets/javascript/jquery.min.js"></script>
+  <script src="./assets/javascript/popper.min.js"></script>
+  <!-- bootstrap -->
+  <script src="./assets/javascript/bootstrap.min.js"></script>
+  <!-- mdbootstrap -->
+  <script src="./assets/javascript/mdb.min.js"></script>
+  <!-- custom script -->
+  <script src='./assets/javascript/app.js'></script>
+</body>
+
+</html>

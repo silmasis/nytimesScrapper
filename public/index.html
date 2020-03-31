@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Times Scraper</title>
+    <!-- **stylesheets** -->
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"/>
+    <!-- bootstrap -->
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- mdbootstrap -->
+    <link href="./assets/css/mdb.min.css" rel="stylesheet"/>
+    <!-- custom css -->
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+</head>
+<body>
+    
+<!-- navbar -->
+<nav class="navbar navbar-dark danger-color">
+    <a class="navbar-brand timesScraper3000" href="./index.html">TIMES SCRAPER 3000</a>
+    <form class="form-inline">
+      <a href="./index.html"><button class="btn btn-light" type="button">Home</button></a>
+      <a href="./saved.html"><button class="btn btn-light" type="button" >Saved Articles</button></a>
+    </form>
+  </nav>
+
+ <!-- jumbotron -->
+  <div class="jumbotron card card-image" style="background-image: url(./assets/images/newspaperBkgrnd.jpg)">
+    <div class="text-black text-center py-5 px-4">
+      <div>
+        <h2 class="card-title h1-responsive pt-3 mb-5 font-bold title"><strong>|| TIMES SCRAPER 3000 ||</strong></h2>
+        <p class="mx-5 mb-5 titleInfo">~ New York Times Articles Scraped 4 U ~
+        </p>
+        <button id="scrapeBtn" type="button" class="btn btn-danger">SCRAPE NEW ARTICLES</button>
+        <button id="clearBtn" type="button" class="btn btn-danger">CLEAR ARTICLES</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- action modal -->
+
+  <!-- articles container -->
+  <div id="articleContainer" class="container"></div>
+
+
+<!-- **script tags** -->
+<!-- axios -->
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<!-- jquery -->
+<script src="./assets/javascript/jquery.min.js"></script>
+<script src="./assets/javascript/popper.min.js"></script>
+<!-- bootstrap -->
+<script src="./assets/javascript/bootstrap.min.js"></script>
+<!-- mdbootstrap -->
+<script src="./assets/javascript/mdb.min.js"></script> 
+<!-- custom script -->
+<script src='./assets/javascript/app.js'></script> 
+</body>
+</html>
